@@ -1,13 +1,4 @@
-// Zed settings
-//
-// For information on how to configure Zed, see the Zed
-// documentation: https://zed.dev/docs/configuring-zed
-//
-// To see all of Zed's default settings without changing your
-// custom settings, run `zed: open default settings` from the
-// command palette (cmd-shift-p / ctrl-shift-p)
 {
-  //BASE
   "cli_default_open_behavior": "new_window",
   "base_keymap": "JetBrains",
   "git_commit_buffer_font_size": 16,
@@ -49,7 +40,6 @@
     "copy_on_select": true,
   },
 
-  //THEME
   "theme": {
     "mode": "dark",
     "light": "Islands Light",
@@ -61,19 +51,16 @@
     "dark": "Colored Zed Icons Theme Dark",
   },
 
-  //EDITOR
   "buffer_line_height": "comfortable",
   "buffer_font_size": 17.0,
   "buffer_font_family": "JetBrains Mono",
 
-  //UI
   "ui_font_family": "JetBrains Mono",
   "ui_font_size": 18.0,
   "minimap": {
     "show": "never",
   },
 
-  //PANELS
   "outline_panel": {
     "dock": "left",
     "button": false,
@@ -101,7 +88,6 @@
     "tree_view": true,
   },
 
-  //FORMATTING
   "format_on_save": "on",
   "prettier": {
     "parser": "",
@@ -150,7 +136,6 @@
     },
   },
 
-  //LSP
   "lsp": {
     "angular": {
       "initialization_options": {
