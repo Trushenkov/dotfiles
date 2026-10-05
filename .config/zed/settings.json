@@ -1,16 +1,42 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
 {
+  //BASE
+  "indent_guides": {
+    "enabled": false,
+  },
+  "agent": {
+    "dock": "left",
+    "button": false,
+    "favorite_models": [],
+    "model_parameters": [],
+    "threads_sidebar": {
+      "position": "right",
+    },
+  },
+  "confirm_quit": true,
   "cli_default_open_behavior": "new_window",
   "base_keymap": "JetBrains",
   "git_commit_buffer_font_size": 16,
+  "max_tabs": 6,
+  "sticky_scroll": {
+    "enabled": true,
+  },
 
   "cursor_shape": "bar",
   "cursor_blink": true,
   "cursor_animation": {
-    "enabled": true,
+    "enabled": false,
   },
 
   "inlay_hints": {
-    "enabled": true,
+    "enabled": false,
     "show_background": true,
     "show_other_hints": true,
     "show_parameter_hints": true,
@@ -27,6 +53,7 @@
     "selections_menu": true,
     "quick_actions": false,
     "breadcrumbs": true,
+    "code_actions": false,
   },
 
   "terminal": {
@@ -36,44 +63,49 @@
       "breadcrumbs": true,
     },
     "default_height": 300,
-    "button": false,
+    "button": true,
+    "dock": "right",
     "copy_on_select": true,
   },
 
+  //THEME
   "theme": {
     "mode": "dark",
-    "light": "Islands Light",
-    "dark": "Moonlight Italic",
+    "light": "Modus Operandi",
+    "dark": "VSCode Dark Modern",
   },
   "icon_theme": {
     "mode": "light",
-    "light": "Base Charmed Icons",
+    "light": "Warm Charmed Icons",
     "dark": "Colored Zed Icons Theme Dark",
   },
 
+  //EDITOR
   "buffer_line_height": "comfortable",
-  "buffer_font_size": 17.0,
+  "buffer_font_size": 16.0,
   "buffer_font_family": "JetBrains Mono",
 
+  //UI
   "ui_font_family": "JetBrains Mono",
-  "ui_font_size": 18.0,
+  "ui_font_size": 16.0,
   "minimap": {
     "show": "never",
   },
 
+  //PANELS
   "outline_panel": {
-    "dock": "left",
+    "dock": "right",
     "button": false,
   },
   "collaboration_panel": {
-    "dock": "left",
+    "dock": "right",
     "button": false,
   },
   "project_panel": {
     "git_status_indicator": true,
     "bold_folder_labels": true,
     "diagnostic_badges": true,
-    "dock": "left",
+    "dock": "right",
     "entry_spacing": "standard",
     "hide_root": true,
     "indent_guides": {
@@ -81,13 +113,46 @@
     },
   },
   "git_panel": {
-    "dock": "left",
+    "dock": "right",
     "group_by": "staging",
     "sort_by": "name",
     "show_count_badge": true,
     "tree_view": true,
   },
+  "search": {
+    "button": false,
+  },
+  "debugger": {
+    "button": false,
+  },
+  "diagnostics": {
+    "button": false,
+  },
+  "title_bar": {
+    "show_worktree_name": false,
+  },
+  "tabs": {
+    "file_icons": true,
+    "git_status": true,
+    "show_close_button": "hover",
+  },
+  "tab_bar": {
+    "show_pinned_tabs_in_separate_row": false,
+  },
+  "status_bar": {
+    "active_language_button": true,
+    "cursor_position_button": false,
+  },
 
+  "gutter": {
+    "bookmarks": false,
+    "folds": false,
+    "breakpoints": false,
+    "min_line_number_digits": 3,
+    "git_gutter_width": "default",
+  },
+
+  //FORMATTING
   "format_on_save": "on",
   "prettier": {
     "parser": "",
@@ -103,6 +168,14 @@
     },
     "JavaScript": {
       "format_on_save": "on",
+      "code_actions_on_format": {
+        "source.fixAll.eslint": true,
+      },
+    },
+    "Angular": {
+      "language_servers": ["angular", "eslint"],
+      "format_on_save": "on",
+      "formatter": "auto",
       "code_actions_on_format": {
         "source.fixAll.eslint": true,
       },
@@ -136,7 +209,14 @@
     },
   },
 
+  //LSP
   "lsp": {
+    "eslint": {
+      "settings": {
+        "validate": "on",
+        "workingDirectories": [{ "mode": "auto" }],
+      },
+    },
     "angular": {
       "initialization_options": {
         "angular_language_server_path": "/Users/trushenkov/.local/share/angular-ls/node_modules/@angular/language-server",
