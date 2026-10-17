@@ -8,6 +8,7 @@
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
   //BASE
+  "diff_view_style": "unified",
   "indent_guides": {
     "enabled": false,
   },
@@ -23,7 +24,7 @@
   "confirm_quit": true,
   "cli_default_open_behavior": "new_window",
   "base_keymap": "JetBrains",
-  "git_commit_buffer_font_size": 16,
+  "git_commit_buffer_font_size": 14,
   "max_tabs": 6,
   "sticky_scroll": {
     "enabled": true,
@@ -52,12 +53,12 @@
   "toolbar": {
     "selections_menu": true,
     "quick_actions": false,
-    "breadcrumbs": true,
+    "breadcrumbs": false,
     "code_actions": false,
   },
 
   "terminal": {
-    "font_size": 16.0,
+    "font_size": 14.0,
     "font_family": "JetBrainsMono Nerd Font",
     "toolbar": {
       "breadcrumbs": true,
@@ -71,13 +72,13 @@
   //THEME
   "theme": {
     "mode": "dark",
-    "light": "Modus Operandi",
+    "light": "JetBrains Light",
     "dark": "VSCode Dark Modern",
   },
   "icon_theme": {
-    "mode": "light",
-    "light": "Warm Charmed Icons",
-    "dark": "Colored Zed Icons Theme Dark",
+    "mode": "dark",
+    "light": "Material Icon Theme",
+    "dark": "Material Icon Theme",
   },
 
   //EDITOR
@@ -147,8 +148,8 @@
   "gutter": {
     "bookmarks": false,
     "folds": false,
-    "breakpoints": false,
-    "min_line_number_digits": 3,
+    "breakpoints": true,
+    // "min_line_number_digits": 3,
     "git_gutter_width": "default",
   },
 

@@ -1,0 +1,25 @@
+[user]
+	name = Trushenkov Dmitry
+	email = d.trushenkov@it-soft.pro
+[core]
+	longpaths = true
+	autocrlf = input
+[column]
+    	ui = auto
+[color]
+    	ui = true
+[branch]
+    	sort = -committerdate
+[tag]
+    	sort = version:refname
+[diff]
+    	algorithm = histogram
+    	colorMoved = plain
+    	mnemonicPrefix = true
+    	renames = true
+[fetch]
+    	prune = true
+    	pruneTags = true
+    	all = true
+[help]
+    	autocorrect = prompt
