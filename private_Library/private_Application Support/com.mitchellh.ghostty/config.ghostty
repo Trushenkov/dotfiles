@@ -5,7 +5,7 @@ window-save-state = never
 macos-option-as-alt = true
 
 quick-terminal-position = top
-quick-terminal-size = 70%,100%
+quick-terminal-size = 80%,100%
 quick-terminal-screen = mouse
 quick-terminal-autohide = true
 quick-terminal-animation-duration = 0.15
