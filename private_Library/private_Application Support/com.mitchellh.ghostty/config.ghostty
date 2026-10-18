@@ -1,0 +1,17 @@
+command = /opt/homebrew/bin/tmux new-session -A -s main
+
+window-save-state = never
+
+macos-option-as-alt = true
+
+quick-terminal-position = top
+quick-terminal-size = 70%,100%
+quick-terminal-screen = mouse
+quick-terminal-autohide = true
+quick-terminal-animation-duration = 0.15
+
+keybind = global:cmd+backslash=toggle_quick_terminal
+keybind = alt+arrow_left=unbind
+keybind = alt+arrow_right=unbind
+
+font-size = 18
